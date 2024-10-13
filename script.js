@@ -31,3 +31,25 @@ function fetchGitHubProjects() {
 window.onload = function() {
     fetchGitHubProjects();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://randomuser.me/api/')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const user = data.results[0];
+            const userInfo = `
+                <p>Név: ${user.name.first} ${user.name.last}</p>
+                <p>Email: ${user.email}</p>
+                <img src="${user.picture.medium}" alt="User Picture">
+            `;
+            document.getElementById('user-info').innerHTML = userInfo;
+        })
+        .catch(error => {
+            console.error('Hiba történt:', error);
+        });
+});
