@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Endrődi Rozina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <!-- Profile Picture and Name -->
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+                <h1>Endrődi Rozina</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Magamról</a></li>
+                <li><a href="#skills">Képességek</a></li>
+                <li><a href="#projects">Projektjeim</a></li>
+                <li><a href="#contact">Elérhetőségek</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <h2>Endrődi Rozina</h2>
+            <p>Egyetemi hallgató, designer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>Magamról</h2>
+            <p>Egy terméktervező hallgató vagyok, akinek weblapot kell csinálnia </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A cool project that demonstrates my skills in web development.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A creative solution for a modern problem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to work with me, feel free to reach out!</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div id="github-projects" class="project-grid">
+            <!-- GitHub projektek dinamikusan jelennek meg itt -->
+        </div>
+    </div>
+</section>
